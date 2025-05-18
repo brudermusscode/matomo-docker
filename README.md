@@ -1,5 +1,7 @@
-Create a file /storage/cron.log - The archiving of
-reports will happen every day at 6 A.M. (if not changed through
+Create a file `/storage/cron.log` - The **archiving of
+reports** will happen **every day** at **6 AM** (if not changed through
 your .env file) and will be logged to here.
 
-kiss
+Then just run `docker compose up -d` - et voilá!
+
+**kuss bruder 💋**
