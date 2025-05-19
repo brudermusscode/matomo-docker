@@ -23,7 +23,13 @@ services:
     volumes:
       - matomo-data:/var/www/html
       - ./storage/cron.log:/var/log/cron.log:rw
-    entrypoint: ["/wait-for-it.sh", "mysql:3306", "--", "/entrypoint.sh"]
+    entrypoint:
+      [
+        "/data/docker/wait-for-it.sh",
+        "mysql:3306",
+        "--",
+        "/data/docker/entrypoint.sh",
+      ]
     deploy:
       replicas: 1
       update_config:

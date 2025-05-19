@@ -1,3 +1,4 @@
 .env
+push.sh
 storage/*
 !storage/.gitkeep
