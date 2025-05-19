@@ -24,4 +24,5 @@ git add .
 git commit -m "$COMMIT_MSG"
 git push
 
-echo "[🥐] „All done my friend, see you next time!“"
+echo "[🥐] „All done my friend!“"
+echo "[🥐] „See you next time.“"
