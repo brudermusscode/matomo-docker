@@ -27,6 +27,7 @@ log_info "🦾" "i" "Added archiving alias: marchive"
 echo "$MATOMO_ARCHIVE_INTERVAL $ARCHIVE_PATH" | crontab -
 log_info "⏱️ " "i" "Added archiving cronjob with interval $MATOMO_ARCHIVE_INTERVAL"
 
+log_info "🫴 " "i" "PHP memory limit should be $PHP_MEMORY_LIMIT"
 
 # Archive once to ensure it's working.
 log_info "🗿" "i" "Running first archive..."

@@ -1,5 +1,7 @@
 FROM matomo:latest
 
+ENV PHP_MEMORY_LIMIT=${PHP_MEMORY_LIMIT}
+
 # Install cron
 RUN apt-get update && apt-get install -y cron nano && rm -rf /var/lib/apt/lists/*
 

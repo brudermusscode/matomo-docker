@@ -9,6 +9,6 @@ log_info() {
 . /.env
 
 # Run the archiving command.
-/usr/local/bin/php -d memory_limit="$PHP_MEMORY_LIMIT" /var/www/html/console core:archive --url="$WEB_URL" >> $CRON_LOG_PATH 2>&1
+/usr/local/bin/php /var/www/html/console core:archive --url="$WEB_URL" >> $CRON_LOG_PATH 2>&1
 
 log_info "💋" "MATOMO" "Archiving complete!"
